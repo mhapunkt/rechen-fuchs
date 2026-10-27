@@ -1,0 +1,16 @@
+{
+  "name": "Rechen-Fuchs",
+  "short_name": "Rechen-Fuchs",
+  "description": "Plus und Minus üben für die 2. Klasse",
+  "lang": "de",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff3dc",
+  "theme_color": "#ffe9c7",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

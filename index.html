@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Rechen-Fuchs">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffe9c7">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" href="icon-192.png">
+  <title>Rechen-Fuchs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+
+  <section id="home" class="screen active">
+    <div class="hero">🦊</div>
+    <h1>Rechen-Fuchs</h1>
+    <p class="sub">Plus und Minus mit dem Fuchs!</p>
+    <div class="badge" id="homeStars">⭐ 0</div>
+    <button class="big" id="startBtn">Los geht's!</button>
+    <button class="link" id="resetBtn">Neu anfangen</button>
+  </section>
+
+  <section id="game" class="screen">
+    <header>
+      <div id="dots" aria-label="Fortschritt"></div>
+      <div id="stars" class="badge small">⭐ 0</div>
+    </header>
+    <div id="fox" class="fox">🦊</div>
+    <div id="task" class="task"></div>
+    <div class="answer-row"><span class="eq">=</span><div id="answer" class="answer"></div></div>
+    <div id="msg" class="msg"></div>
+    <div class="actions"><button id="helpBtn" class="help">💡 Hilfe</button></div>
+    <div id="pad" class="pad"></div>
+  </section>
+
+  <section id="result" class="screen">
+    <div class="hero" id="resultFox">🎉</div>
+    <h1 id="resultTitle">Geschafft!</h1>
+    <div id="resultStars" class="result-stars"></div>
+    <p id="resultText" class="sub"></p>
+    <p id="resultInfo" class="info"></p>
+    <button class="big" id="againBtn">Noch eine Runde</button>
+    <button class="link" id="homeBtn">Zurück</button>
+  </section>
+
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-card">
+      <div class="sheet-title">💡 So geht's in Zehner-Schritten</div>
+      <div id="viz" class="viz"></div>
+      <div id="steps" class="steps"></div>
+      <button id="nextStep" class="big small-btn">Weiter ▶</button>
+    </div>
+  </div>
+
+  <div id="confetti" aria-hidden="true"></div>
+</main>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
